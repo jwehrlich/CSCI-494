@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		298AEF3D1548C2D800E8AA3F /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 298AEF3C1548C2D800E8AA3F /* default.png */; };
+		29A6273C153DB50F003FAE90 /* iPhone_background_480x300.png in Resources */ = {isa = PBXBuildFile; fileRef = 29A6273B153DB50F003FAE90 /* iPhone_background_480x300.png */; };
+		29A6274D153DC0E3003FAE90 /* EnvMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A6274C153DC0E3003FAE90 /* EnvMap.m */; };
+		64CF85C8151CE46300902B4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CF85C7151CE46300902B4F /* UIKit.framework */; };
+		64CF85CA151CE46300902B4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CF85C9151CE46300902B4F /* Foundation.framework */; };
+		64CF85CC151CE46300902B4F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CF85CB151CE46300902B4F /* CoreGraphics.framework */; };
+		64CF85D2151CE46300902B4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64CF85D0151CE46300902B4F /* InfoPlist.strings */; };
+		64CF85D4151CE46300902B4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CF85D3151CE46300902B4F /* main.m */; };
+		64CF85D8151CE46300902B4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CF85D7151CE46300902B4F /* AppDelegate.m */; };
+		64CF85DB151CE46300902B4F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CF85D9151CE46300902B4F /* MainStoryboard_iPhone.storyboard */; };
+		64CF85E1151CE46300902B4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CF85E0151CE46300902B4F /* ViewController.m */; };
+		64CF85E9151CE46300902B4F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CF85E8151CE46300902B4F /* SenTestingKit.framework */; };
+		64CF85EA151CE46300902B4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CF85C7151CE46300902B4F /* UIKit.framework */; };
+		64CF85EB151CE46300902B4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CF85C9151CE46300902B4F /* Foundation.framework */; };
+		64CF85F3151CE46300902B4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64CF85F1151CE46300902B4F /* InfoPlist.strings */; };
+		64CF85F6151CE46300902B4F /* ArtilleryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CF85F5151CE46300902B4F /* ArtilleryTests.m */; };
+		64CF8600151CE49600902B4F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CF85FF151CE49600902B4F /* GameKit.framework */; };
+		64CF8606151CE4E600902B4F /* EnvObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CF8605151CE4E600902B4F /* EnvObj.m */; };
+		64CF8609151CE4F400902B4F /* EnvObj_Tank.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CF8608151CE4F400902B4F /* EnvObj_Tank.m */; };
+		64CF860C151CE52500902B4F /* EnvObj_Ground.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CF860B151CE52500902B4F /* EnvObj_Ground.m */; };
+		64CF860F151CE53400902B4F /* EnvObj_Shell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CF860E151CE53400902B4F /* EnvObj_Shell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64CF85EC151CE46300902B4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64CF85BA151CE46200902B4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64CF85C2151CE46200902B4F;
+			remoteInfo = Artillery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		298AEF3C1548C2D800E8AA3F /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		29A6273B153DB50F003FAE90 /* iPhone_background_480x300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_background_480x300.png; sourceTree = "<group>"; };
+		29A6274B153DC0E3003FAE90 /* EnvMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvMap.h; sourceTree = "<group>"; };
+		29A6274C153DC0E3003FAE90 /* EnvMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvMap.m; sourceTree = "<group>"; };
+		64CF85C3151CE46300902B4F /* Artillery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artillery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64CF85C7151CE46300902B4F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		64CF85C9151CE46300902B4F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		64CF85CB151CE46300902B4F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		64CF85CF151CE46300902B4F /* Artillery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Artillery-Info.plist"; sourceTree = "<group>"; };
+		64CF85D1151CE46300902B4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64CF85D3151CE46300902B4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64CF85D5151CE46300902B4F /* Artillery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Artillery-Prefix.pch"; sourceTree = "<group>"; };
+		64CF85D6151CE46300902B4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		64CF85D7151CE46300902B4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		64CF85DA151CE46300902B4F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		64CF85DF151CE46300902B4F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		64CF85E0151CE46300902B4F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		64CF85E7151CE46300902B4F /* ArtilleryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtilleryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64CF85E8151CE46300902B4F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		64CF85F0151CE46300902B4F /* ArtilleryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArtilleryTests-Info.plist"; sourceTree = "<group>"; };
+		64CF85F2151CE46300902B4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64CF85F4151CE46300902B4F /* ArtilleryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtilleryTests.h; sourceTree = "<group>"; };
+		64CF85F5151CE46300902B4F /* ArtilleryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtilleryTests.m; sourceTree = "<group>"; };
+		64CF85FF151CE49600902B4F /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		64CF8604151CE4E600902B4F /* EnvObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvObj.h; sourceTree = "<group>"; };
+		64CF8605151CE4E600902B4F /* EnvObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvObj.m; sourceTree = "<group>"; };
+		64CF8607151CE4F400902B4F /* EnvObj_Tank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvObj_Tank.h; sourceTree = "<group>"; };
+		64CF8608151CE4F400902B4F /* EnvObj_Tank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvObj_Tank.m; sourceTree = "<group>"; };
+		64CF860A151CE52500902B4F /* EnvObj_Ground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvObj_Ground.h; sourceTree = "<group>"; };
+		64CF860B151CE52500902B4F /* EnvObj_Ground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvObj_Ground.m; sourceTree = "<group>"; };
+		64CF860D151CE53400902B4F /* EnvObj_Shell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvObj_Shell.h; sourceTree = "<group>"; };
+		64CF860E151CE53400902B4F /* EnvObj_Shell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvObj_Shell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64CF85C0151CE46200902B4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CF85CC151CE46300902B4F /* CoreGraphics.framework in Frameworks */,
+				64CF8600151CE49600902B4F /* GameKit.framework in Frameworks */,
+				64CF85C8151CE46300902B4F /* UIKit.framework in Frameworks */,
+				64CF85CA151CE46300902B4F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64CF85E3151CE46300902B4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CF85E9151CE46300902B4F /* SenTestingKit.framework in Frameworks */,
+				64CF85EA151CE46300902B4F /* UIKit.framework in Frameworks */,
+				64CF85EB151CE46300902B4F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29A6273E153DB513003FAE90 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				29A6273B153DB50F003FAE90 /* iPhone_background_480x300.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		64CF85B8151CE46200902B4F = {
+			isa = PBXGroup;
+			children = (
+				298AEF3C1548C2D800E8AA3F /* default.png */,
+				64CF85CD151CE46300902B4F /* Artillery */,
+				64CF85EE151CE46300902B4F /* ArtilleryTests */,
+				64CF85C6151CE46300902B4F /* Frameworks */,
+				64CF85C4151CE46300902B4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64CF85C4151CE46300902B4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64CF85C3151CE46300902B4F /* Artillery.app */,
+				64CF85E7151CE46300902B4F /* ArtilleryTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64CF85C6151CE46300902B4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64CF85FF151CE49600902B4F /* GameKit.framework */,
+				64CF85C7151CE46300902B4F /* UIKit.framework */,
+				64CF85C9151CE46300902B4F /* Foundation.framework */,
+				64CF85CB151CE46300902B4F /* CoreGraphics.framework */,
+				64CF85E8151CE46300902B4F /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64CF85CD151CE46300902B4F /* Artillery */ = {
+			isa = PBXGroup;
+			children = (
+				29A6273E153DB513003FAE90 /* images */,
+				64CF8603151CE4CD00902B4F /* EnvObjects */,
+				64CF85CE151CE46300902B4F /* Supporting Files */,
+				64CF85D6151CE46300902B4F /* AppDelegate.h */,
+				64CF85D7151CE46300902B4F /* AppDelegate.m */,
+				64CF85D9151CE46300902B4F /* MainStoryboard_iPhone.storyboard */,
+				64CF85DF151CE46300902B4F /* ViewController.h */,
+				64CF85E0151CE46300902B4F /* ViewController.m */,
+			);
+			path = Artillery;
+			sourceTree = "<group>";
+		};
+		64CF85CE151CE46300902B4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64CF85CF151CE46300902B4F /* Artillery-Info.plist */,
+				64CF85D0151CE46300902B4F /* InfoPlist.strings */,
+				64CF85D3151CE46300902B4F /* main.m */,
+				64CF85D5151CE46300902B4F /* Artillery-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64CF85EE151CE46300902B4F /* ArtilleryTests */ = {
+			isa = PBXGroup;
+			children = (
+				64CF85F4151CE46300902B4F /* ArtilleryTests.h */,
+				64CF85F5151CE46300902B4F /* ArtilleryTests.m */,
+				64CF85EF151CE46300902B4F /* Supporting Files */,
+			);
+			path = ArtilleryTests;
+			sourceTree = "<group>";
+		};
+		64CF85EF151CE46300902B4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64CF85F0151CE46300902B4F /* ArtilleryTests-Info.plist */,
+				64CF85F1151CE46300902B4F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64CF8603151CE4CD00902B4F /* EnvObjects */ = {
+			isa = PBXGroup;
+			children = (
+				64CF8604151CE4E600902B4F /* EnvObj.h */,
+				64CF8605151CE4E600902B4F /* EnvObj.m */,
+				64CF8607151CE4F400902B4F /* EnvObj_Tank.h */,
+				64CF8608151CE4F400902B4F /* EnvObj_Tank.m */,
+				64CF860A151CE52500902B4F /* EnvObj_Ground.h */,
+				64CF860B151CE52500902B4F /* EnvObj_Ground.m */,
+				64CF860D151CE53400902B4F /* EnvObj_Shell.h */,
+				64CF860E151CE53400902B4F /* EnvObj_Shell.m */,
+				29A6274B153DC0E3003FAE90 /* EnvMap.h */,
+				29A6274C153DC0E3003FAE90 /* EnvMap.m */,
+			);
+			name = EnvObjects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64CF85C2151CE46200902B4F /* Artillery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64CF85F9151CE46300902B4F /* Build configuration list for PBXNativeTarget "Artillery" */;
+			buildPhases = (
+				64CF85BF151CE46200902B4F /* Sources */,
+				64CF85C0151CE46200902B4F /* Frameworks */,
+				64CF85C1151CE46200902B4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Artillery;
+			productName = Artillery;
+			productReference = 64CF85C3151CE46300902B4F /* Artillery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64CF85E6151CE46300902B4F /* ArtilleryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64CF85FC151CE46300902B4F /* Build configuration list for PBXNativeTarget "ArtilleryTests" */;
+			buildPhases = (
+				64CF85E2151CE46300902B4F /* Sources */,
+				64CF85E3151CE46300902B4F /* Frameworks */,
+				64CF85E4151CE46300902B4F /* Resources */,
+				64CF85E5151CE46300902B4F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64CF85ED151CE46300902B4F /* PBXTargetDependency */,
+			);
+			name = ArtilleryTests;
+			productName = ArtilleryTests;
+			productReference = 64CF85E7151CE46300902B4F /* ArtilleryTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64CF85BA151CE46200902B4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 64CF85BD151CE46200902B4F /* Build configuration list for PBXProject "Artillery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 64CF85B8151CE46200902B4F;
+			productRefGroup = 64CF85C4151CE46300902B4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64CF85C2151CE46200902B4F /* Artillery */,
+				64CF85E6151CE46300902B4F /* ArtilleryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64CF85C1151CE46200902B4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CF85D2151CE46300902B4F /* InfoPlist.strings in Resources */,
+				64CF85DB151CE46300902B4F /* MainStoryboard_iPhone.storyboard in Resources */,
+				29A6273C153DB50F003FAE90 /* iPhone_background_480x300.png in Resources */,
+				298AEF3D1548C2D800E8AA3F /* default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64CF85E4151CE46300902B4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CF85F3151CE46300902B4F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64CF85E5151CE46300902B4F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64CF85BF151CE46200902B4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CF85D4151CE46300902B4F /* main.m in Sources */,
+				64CF85D8151CE46300902B4F /* AppDelegate.m in Sources */,
+				64CF85E1151CE46300902B4F /* ViewController.m in Sources */,
+				64CF8606151CE4E600902B4F /* EnvObj.m in Sources */,
+				64CF8609151CE4F400902B4F /* EnvObj_Tank.m in Sources */,
+				64CF860C151CE52500902B4F /* EnvObj_Ground.m in Sources */,
+				64CF860F151CE53400902B4F /* EnvObj_Shell.m in Sources */,
+				29A6274D153DC0E3003FAE90 /* EnvMap.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64CF85E2151CE46300902B4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CF85F6151CE46300902B4F /* ArtilleryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64CF85ED151CE46300902B4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64CF85C2151CE46200902B4F /* Artillery */;
+			targetProxy = 64CF85EC151CE46300902B4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64CF85D0151CE46300902B4F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64CF85D1151CE46300902B4F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		64CF85D9151CE46300902B4F /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64CF85DA151CE46300902B4F /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		64CF85F1151CE46300902B4F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64CF85F2151CE46300902B4F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64CF85F7151CE46300902B4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64CF85F8151CE46300902B4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64CF85FA151CE46300902B4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Artillery/Artillery-Prefix.pch";
+				INFOPLIST_FILE = "Artillery/Artillery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		64CF85FB151CE46300902B4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Artillery/Artillery-Prefix.pch";
+				INFOPLIST_FILE = "Artillery/Artillery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		64CF85FD151CE46300902B4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Artillery.app/Artillery";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Artillery/Artillery-Prefix.pch";
+				INFOPLIST_FILE = "ArtilleryTests/ArtilleryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		64CF85FE151CE46300902B4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Artillery.app/Artillery";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Artillery/Artillery-Prefix.pch";
+				INFOPLIST_FILE = "ArtilleryTests/ArtilleryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64CF85BD151CE46200902B4F /* Build configuration list for PBXProject "Artillery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64CF85F7151CE46300902B4F /* Debug */,
+				64CF85F8151CE46300902B4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64CF85F9151CE46300902B4F /* Build configuration list for PBXNativeTarget "Artillery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64CF85FA151CE46300902B4F /* Debug */,
+				64CF85FB151CE46300902B4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64CF85FC151CE46300902B4F /* Build configuration list for PBXNativeTarget "ArtilleryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64CF85FD151CE46300902B4F /* Debug */,
+				64CF85FE151CE46300902B4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64CF85BA151CE46200902B4F /* Project object */;
+}
